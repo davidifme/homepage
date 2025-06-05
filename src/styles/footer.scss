@@ -1,12 +1,15 @@
 footer {
     background-color: #0791B1;
-    padding: 0 1rem 1.5rem 1rem;
+    padding: 1rem 1rem 1.5rem 1rem;
     width: 100%;
     position: relative;
 
     .content {
-        display: flex;
-        flex-direction: column; 
+        display: grid;
+        grid-template-areas:
+        'heading'
+        'text'
+        'icons';
         color: white;
     }
 
