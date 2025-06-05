@@ -1,4 +1,9 @@
 @charset "UTF-8";
 
 // Forward all SCSS partials
+@forward './reset.scss';
+@forward './icons.scss';
+@forward './content.scss';
+@forward './header.scss';
 @forward './main.scss';
+@forward './footer.scss';

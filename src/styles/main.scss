@@ -1,0 +1,55 @@
+main {
+    padding: 0 12px;
+    margin-top: 50px;
+
+    section.my-work {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+            margin-bottom: 0.25rem;
+        }
+    }
+
+    .work-grid {
+        display: grid;
+        grid-template-areas: 'card';
+    }
+
+    .grid-item {
+        margin-bottom: 1rem;
+        img {
+            width: 100%;
+            border-radius: 10px 10px 0 0;
+            display: block;
+        }
+
+        .content {
+            display: grid;
+            grid-auto-flow: column;
+            grid-template-areas:
+            'title icons'
+            'description description';
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 12px;
+            border-radius: 0 0 10px 10px;
+
+            h3 {
+                grid-area: 'title';
+                font-weight: 600;
+            }
+
+            .icons-container {
+                grid-area: 'icons';
+                display: flex;
+                justify-content: flex-start;
+                gap: 0.5rem;
+            }
+
+            p {
+                grid-area: 'description';
+            }
+        }
+    }
+}
