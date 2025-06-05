@@ -1,5 +1,39 @@
 footer {
-    img {
-        width: 80vw;
+    background-color: #0791B1;
+    padding: 0 1rem 1.5rem 1rem;
+    width: 100%;
+    position: relative;
+
+    section.info {
+        .content {
+            display: flex;
+            flex-direction: column; 
+            color: white;
+        }
+
+        h2 {
+            align-self: center;
+            margin-bottom: 0.5rem;
+        }
+
+        p.get-in-touch {
+            max-width: 30ch;
+        }
+
+        .icons {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        img {
+            display: block;
+            width: 150px;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+
+            filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+        }
     }
 }
