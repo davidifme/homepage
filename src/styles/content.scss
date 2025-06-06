@@ -10,6 +10,13 @@ p, span, a, button, input, textarea, select {
     font-family: 'Roboto', sans-serif;
 }
 
+// Remove default link styling
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
 // img preset (debug)
 img {
     max-width: 300px;
