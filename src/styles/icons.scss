@@ -9,18 +9,3 @@
         width: 32px;
     }
 }
-
-// Tablet
-@media (min-width: 750px) {
-    .icon {
-        width: 32px;
-    
-        &.small {
-            width: 24px;
-        }
-    
-        &.big {
-            width: 36px;
-        }
-    }
-}
