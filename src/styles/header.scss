@@ -13,6 +13,8 @@ header {
 
             img {   
                 max-width: 100%;
+                mask-image: linear-gradient(to bottom, black 98%, transparent 100%);
+                -webkit-mask-image: linear-gradient(to bottom, black 98%, transparent 100%);
             }
     
             h1 {
@@ -20,6 +22,24 @@ header {
                 position: absolute;
                 bottom: 0;
             }
+        }
+    }
+
+    section.about-me {
+        padding: 10px;
+        text-align: center;
+
+        p {
+            text-align: left;
+            border-left: 2px solid rgba(21, 21, 21, 0.3);
+            padding-left: 0.5rem;
+        }
+
+        .icons-wrapper {
+            display: flex;
+            margin-top: 1rem;
+            justify-content: center;
+            gap: 1.5rem;
         }
     }
 }
