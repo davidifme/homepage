@@ -73,7 +73,7 @@ main {
     }
 }
 
-// Laptop
+// Desktop
 @media (min-width: 1000px) {
     main {
         padding: 30px;
@@ -97,5 +97,12 @@ main {
                 }
             }
         }
+    }
+}
+
+// Desktop 2560 (4K)
+@media (min-width: 1900px) {
+    main {
+        max-width: 1800px;
     }
 }
