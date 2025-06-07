@@ -29,6 +29,7 @@ p {
     font-size: 1.1rem;
 }
 
+// Tablet
 @media (min-width: 750px) {
     h1 {
         font-size: 4rem;
@@ -45,4 +46,9 @@ p {
     p {
         font-size: 1.3rem;
     }
+}
+
+// Laptop
+@media (min-width: 1000px) {
+    
 }
