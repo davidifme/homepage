@@ -116,6 +116,7 @@ footer {
 // Desktop
 @media (min-width: 1000px) {
     footer {
+        overflow: hidden;
         width: 100%;
         section.info {
             .info-wrapper {
@@ -139,6 +140,15 @@ footer {
                         margin-right: 5px;
                     }
                 }
+            }
+
+            img {
+                will-change: transform;
+                transition: transform 0.25s ease-in-out;
+            }
+
+            img:hover {
+                transform: scale(1.1);
             }
         }
     }
