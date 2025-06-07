@@ -85,6 +85,9 @@ main {
             gap: 1.5rem;
 
             .grid-item {
+                will-change: transform;
+                transition: transform 0.25s ease-in-out;
+
                 p {
                     font-size: 1.15rem;
                 }
@@ -94,6 +97,10 @@ main {
                     .icons-wrapper {
                         align-items: center;
                     }
+                }
+
+                &:hover {
+                    transform: scale(1.05);
                 }
             }
         }

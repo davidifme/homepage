@@ -29,6 +29,12 @@
 @media (min-width: 1000px) {
     .icon {
         width: 24px;
+        will-change: transform;
+        transition: transform 0.25s ease-in-out;
+    
+        &:hover {
+            transform: scale(1.1) translateY(-5px);
+        }
     
         &.small {
             width: 22px;
