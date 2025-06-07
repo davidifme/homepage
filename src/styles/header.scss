@@ -4,8 +4,11 @@ header {
     grid-template-areas:
     'image'
     'about-me';
+    margin-bottom: 50px;
 
     section.image {
+        grid-area: image;
+
         .image-wrapper {
             display: flex;
             justify-content: center;
@@ -26,6 +29,7 @@ header {
     }
 
     section.about-me {
+        grid-area: about-me;
         padding: 10px;
         text-align: center;
 
