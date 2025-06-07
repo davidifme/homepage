@@ -4,25 +4,26 @@ footer {
     position: relative;
     padding: 12px 12px 24px 12px;
 
-    img {
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        width: 150px;
-        filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3));
+    svg,
+    svg g {
+        fill: white;
     }
 
     section.info {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(min-content, auto));
-        grid-template-rows: repeat(auto-fit, minmax(min-content, auto));
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         grid-template-areas:
         'title'
         'info'
         'icons';
 
+        img {
+            display: none;
+        }
+
         h2 {
             grid-area: title;
+            text-align: center;
         }
 
         p {
@@ -33,6 +34,8 @@ footer {
             grid-area: info;
             display: flex;
             flex-direction: column;
+            align-items: center;
+            text-align: center;
             gap: 0.25rem;
 
             & > p {
@@ -44,8 +47,60 @@ footer {
         .icons-wrapper {
             grid-area: icons;
             display: flex;
+            justify-content: center;
             gap: 1rem;
             margin-top: 1rem;
+        }
+    }
+}
+
+@media (min-width: 750px) {
+    footer {
+        padding: 12px 24px 0px 24px;
+
+        section.info {
+            grid-template-columns: repeat(auto-fit, minmax(min-content, 1fr));
+            grid-template-areas:
+            'title title title'
+            'info icons img';
+
+            img {
+                display: block;
+                grid-area: img;
+                filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3));
+                width: 200px;
+                align-self: end;
+                justify-self: center;
+            }
+
+            h2 {
+                grid-area: title;
+                text-align: center;
+                font-size: 2.75rem;
+            }
+
+            .info-wrapper {
+                grid-area: info;
+
+                & > p {
+                    font-size: 1.35rem;
+                }
+
+                & div {
+                    p {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+
+            .icons-wrapper {
+                grid-area: icons;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin: 0;
+                gap: 1.5rem;
+            }
         }
     }
 }
