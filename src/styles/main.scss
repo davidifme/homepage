@@ -75,5 +75,27 @@ main {
 
 // Laptop
 @media (min-width: 1000px) {
-    
+    main {
+        padding: 30px;
+        margin-bottom: 75px;
+
+        .projects-grid {
+            grid-template-areas:
+            'project project project';
+            gap: 1.5rem;
+
+            .grid-item {
+                p {
+                    font-size: 1.15rem;
+                }
+
+                .project-info-wrapper {
+                    
+                    .icons-wrapper {
+                        align-items: center;
+                    }
+                }
+            }
+        }
+    }
 }
